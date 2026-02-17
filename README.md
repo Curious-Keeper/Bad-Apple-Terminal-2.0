@@ -1,6 +1,9 @@
 # Bad Apple but it is played in the Terminal
 
-**Based on [KineticTactic/Bad-Apple-Terminal](https://github.com/KineticTactic/Bad-Apple-Terminal)** by [@KineticTactic](https://github.com/KineticTactic). This repo is a modernized fork (updated dependencies, security fixes, pause/play controls).
+**Based on [KineticTactic/Bad-Apple-Terminal](https://github.com/KineticTactic/Bad-Apple-Terminal)** by [@KineticTactic](https://github.com/KineticTactic). This repo is a modernized fork (updated dependencies, security fixes, pause/play controls, color flag).
+
+<img width="900" height="600" alt="Window_2026-02-17_10-18-39" src="https://github.com/user-attachments/assets/5ffa1545-3f0f-45d9-be1a-85d4e9ebbc1e" />
+
 
 ## Requirements
 
