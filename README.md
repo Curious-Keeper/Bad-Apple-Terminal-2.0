@@ -1,37 +1,34 @@
 # Bad Apple but it is played in the Terminal
 
+**Based on [KineticTactic/Bad-Apple-Terminal](https://github.com/KineticTactic/Bad-Apple-Terminal)** by [@KineticTactic](https://github.com/KineticTactic). This repo is a modernized fork (updated dependencies, security fixes, pause/play controls).
+
 Here is a Demo [Youtube video](https://youtu.be/_JTHbbsSCZk).
 
 ## Requirements
 
--   Node.js
--   FFmpeg
--   A terminal that supports unicode characters
+-   Node.js (v18+)
+-   A terminal that supports Unicode (e.g. braille characters). FFmpeg is bundled via `ffmpeg-static` for frame extraction.
 
 ## Steps to run
 
 ### `npm install`
 
-Installs the required dependecies.
+Installs the required dependencies.
 
-### `npm run prepare`
-Prepare the resources for the included Bad Apple video by default.
-- Extracts the video file into an image sequence.
-- Reads the image sequence and generates `data/` containing the frames converted into text.
+### First-time setup (prepare the video)
 
-**OR**
-
-### `npm run prepare <filepath>`
-Prepare the resources for a specific video.
+1. **`npm run extract`** — Extracts frames from `res/BadApple.mp4` (or pass a path: `node extractFrames.js /path/to/video.mp4`).
+2. **`npm run build`** — Converts frames to text and merges into `data.txt`.
 
 ### `npm start`
 
-Plays the video in the console. Enjoy!
+Plays the video in the console. **Space** = pause/resume, **Q** = quit.
 
-Note: If you want to play it again, run `npm start`. You dont have to run the other commands, unless you delete the `data.txt` file.
+Note: If you want to play it again, run `npm start`. You don't have to run extract/build again unless you delete `data.txt` or the `frames/` folder.
 
-Note^2: Make sure the console font size is small enough, otherwise it might not form the image properly, or start flickering. You know the font is small enough if the console doesnt start scrolling down.
+Note: Make sure the console font size is small enough, otherwise it might not form the image properly, or start flickering. You know the font is small enough if the console doesn't start scrolling down.
 
 ## Contributors
 
-Special thanks to [@yeonfish6040](https://github.com/yeonfish6040) for adding support for custom videos and optimising the video to text extraction process.
+- Original project by [@KineticTactic](https://github.com/KineticTactic).
+- Special thanks to [@yeonfish6040](https://github.com/yeonfish6040) for adding support for custom videos and optimising the video-to-text extraction process.
