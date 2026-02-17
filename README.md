@@ -2,12 +2,10 @@
 
 **Based on [KineticTactic/Bad-Apple-Terminal](https://github.com/KineticTactic/Bad-Apple-Terminal)** by [@KineticTactic](https://github.com/KineticTactic). This repo is a modernized fork (updated dependencies, security fixes, pause/play controls).
 
-Here is a Demo [Youtube video](https://youtu.be/_JTHbbsSCZk).
-
 ## Requirements
 
--   Node.js (v18+)
--   A terminal that supports Unicode (e.g. braille characters). FFmpeg is bundled via `ffmpeg-static` for frame extraction.
+- Node.js (v18+)
+- A terminal that supports Unicode (e.g. braille characters). FFmpeg is bundled via `ffmpeg-static` for frame extraction.
 
 ## Steps to run
 
@@ -42,7 +40,9 @@ The status line (frame %, FPS, controls) stays in your terminal’s default colo
 
 Note: If you want to play it again, run `npm start`. You don't have to run extract/build again unless you delete `data.txt` or the `frames/` folder.
 
-Note: Make sure the console font size is small enough, otherwise it might not form the image properly, or start flickering. You know the font is small enough if the console doesn't start scrolling down.
+Note: Make sure the console font size is small enough, otherwise it might not form the image properly, or start flickering. You know the font is small enough if the console doesn't start scrolling down. I launch with font at 4.
+
+**Enjoy**
 
 ## Contributors
 
