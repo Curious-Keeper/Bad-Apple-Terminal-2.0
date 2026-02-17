@@ -24,6 +24,22 @@ Installs the required dependencies.
 
 Plays the video in the console. **Space** = pause/resume, **Q** = quit.
 
+#### Color option (`-C` / `--color`)
+
+You can set the color of the video to match your terminal theme (e.g. like `cmatrix -C cyan`):
+
+```bash
+node index.js -C cyan
+# or
+npm start -- -C cyan
+```
+
+**Options:** `-C <color>` or `--color <color>`
+
+**Available colors:** `green`, `red`, `blue`, `white`, `yellow`, `cyan`, `magenta`, `black`
+
+The status line (frame %, FPS, controls) stays in your terminal’s default color; only the video is drawn in the chosen color.
+
 Note: If you want to play it again, run `npm start`. You don't have to run extract/build again unless you delete `data.txt` or the `frames/` folder.
 
 Note: Make sure the console font size is small enough, otherwise it might not form the image properly, or start flickering. You know the font is small enough if the console doesn't start scrolling down.
